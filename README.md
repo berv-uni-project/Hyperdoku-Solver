@@ -12,4 +12,18 @@ In this repository have two version application,
 * GUI version build with Netbeans.
 * Test case is [here](test/).
 
+## Interface
+
+### GUI Version
+
+#### Main Menu
+
+![Main Menu](doc/main-gui.png)
+
+#### Result
+
+![Result](doc/result-gui.png)
+
+# Creator
+
 Created by : Bervianto Leo Pratama
