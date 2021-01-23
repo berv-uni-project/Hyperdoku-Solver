@@ -22,22 +22,22 @@ public class App {
         FileName = in.nextLine();
 
         //Memulai inisialisasi hyperdoku
-        HyperdokuSolver HS = new HyperdokuSolver(9, 9);
+        HyperdokuSolver solver = new HyperdokuSolver(9, 9);
         //Membaca File
-        HS.ReadHyperdokuFromFile(FileName);
+        solver.ReadHyperdokuFromFile(FileName);
         System.out.println("Open File...");
         //Mencetak hasil baca
         System.out.println("Input Hyperdoku : ");
-        HS.PrintHyperdoku();
+        solver.PrintHyperdoku();
         //Memulai memecahkan
         double start = System.currentTimeMillis();
-        HS.Solver();
+        solver.Solver();
         double end = System.currentTimeMillis();
         //Akhir pemecahan
         //Cetak setiap hasil
         System.out.println("Hasilnya adalah : ");
-        HS.PrintHyperdoku();
-        System.out.println("Jumlah assignment : " + HS.assign + " kali");
+        solver.PrintHyperdoku();
+        System.out.println("Jumlah assignment : " + solver.assign + " kali");
         System.out.println("Waktu memecahkan sekitar : " + (end - start) + " ms");
     }
 }

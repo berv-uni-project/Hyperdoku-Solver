@@ -261,26 +261,26 @@ public class Hyperdoku extends javax.swing.JFrame {
             try {
                 // What to do with the file, e.g. display it in a TextArea
                 inputField1.read(new FileReader(file.getAbsolutePath()), null);
-                HyperdokuSolver HS = new HyperdokuSolver(9, 9);
+                HyperdokuSolver solver = new HyperdokuSolver(9, 9);
                 //Membaca File
-                HS.ReadHyperdokuFromFile(file.getAbsolutePath());
+                solver.ReadHyperdokuFromFile(file.getAbsolutePath());
                 double start = System.currentTimeMillis();
-                HS.Solver();
+                solver.Solver();
                 double end = System.currentTimeMillis();
                 jTextField2.setText(String.valueOf(end - start));
-                jTextField1.setText(String.valueOf(HS.assign));
+                jTextField1.setText(String.valueOf(solver.assign));
                 StringBuilder sb = new StringBuilder();
                 int k;
-                for (int i = 1; i <= HS.GetNBrsEff(); i++) {
+                for (int i = 1; i <= solver.GetNBrsEff(); i++) {
                     if ((i - 1) % 3 == 0) {
                         for (k = 1; k <= 21; k++) {
                             sb.append("-");
                         }
                         sb.append("\n");
                     }
-                    for (int j = 1; j <= HS.GetNKolEff(); j++) {
-                        sb.append(String.valueOf(HS.GetElmt(i, j)));
-                        if (j == HS.GetNKolEff()) {
+                    for (int j = 1; j <= solver.GetNKolEff(); j++) {
+                        sb.append(String.valueOf(solver.GetElmt(i, j)));
+                        if (j == solver.GetNKolEff()) {
                             sb.append("\n");
                         } else if (j % 3 == 0) {
                             sb.append(" | ");
