@@ -1,6 +1,7 @@
 package hyperdoku.solver.app;
 
 import hyperdoku.solver.utilities.HyperdokuSolver;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,7 +14,6 @@ import javax.swing.JFileChooser;
  */
 
 /**
- *
  * @author Bervianto Leo P
  */
 public class Hyperdoku extends javax.swing.JFrame {
@@ -133,126 +133,116 @@ public class Hyperdoku extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(inputField1)
-                            .addComponent(OpenButton, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(15, 15, 15)
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
-                                            .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)))
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel4)
-                                    .addComponent(jLabel5)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(30, 30, 30))))
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addComponent(inputField1)
+                                                        .addComponent(OpenButton, javax.swing.GroupLayout.DEFAULT_SIZE, 194, Short.MAX_VALUE))
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(15, 15, 15)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                                        .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING)
+                                                                                        .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                                        .addComponent(jTextField2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
+                                                                                        .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 274, Short.MAX_VALUE))
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jLabel4)
+                                                                        .addComponent(jLabel5)))
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(30, 30, 30))))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(inputField1)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)))
-                    .addComponent(OpenButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(17, 17, 17))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(17, 17, 17)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(inputField1)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jLabel7)
+                                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel4))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jLabel6)
+                                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                        .addComponent(jLabel5)))
+                                        .addComponent(OpenButton, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(17, 17, 17))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
-        // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_ExitActionPerformed
 
     private void OpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenActionPerformed
-        // TODO add your handling code here:
         int returnVal = fileChooser.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             try {
-              // What to do with the file, e.g. display it in a TextArea
-              inputField1.read( new FileReader( file.getAbsolutePath() ), null );
-              HyperdokuSolver HS = new HyperdokuSolver(9,9);
-		//Membaca File
-              HS.ReadHyperdokuFromFile(file.getAbsolutePath());
-              double start=System.currentTimeMillis();
-		HS.Solver();
-		double end=System.currentTimeMillis();
-                jTextField2.setText(String.valueOf(end-start));
+                // What to do with the file, e.g. display it in a TextArea
+                inputField1.read(new FileReader(file.getAbsolutePath()), null);
+                HyperdokuSolver HS = new HyperdokuSolver(9, 9);
+                //Membaca File
+                HS.ReadHyperdokuFromFile(file.getAbsolutePath());
+                double start = System.currentTimeMillis();
+                HS.Solver();
+                double end = System.currentTimeMillis();
+                jTextField2.setText(String.valueOf(end - start));
                 jTextField1.setText(String.valueOf(HS.assign));
                 StringBuilder sb = new StringBuilder();
                 int k;
-		for(int i=1;i<=HS.GetNBrsEff();i++)
-		{
-			if ((i-1) % 3 == 0 ) {
-				for (k=1;k<=21;k++)
-				{
-					sb.append("-");
-				}
-				sb.append("\n");
-			}
-			for(int j=1;j<=HS.GetNKolEff();j++)
-			{
-				sb.append(String.valueOf(HS.GetElmt(i,j)));
-				if(j==HS.GetNKolEff())
-				{
-					sb.append("\n");
-				}
-				else if (j % 3 == 0)
-				{
-					sb.append(" | ");
-				} 
-				else sb.append(" ");
-			}
-		}
-		//Penutup
-		for (k=1;k<=21;k++)
-		{
-			sb.append("-");
-		}
-		sb.append("\n");
+                for (int i = 1; i <= HS.GetNBrsEff(); i++) {
+                    if ((i - 1) % 3 == 0) {
+                        for (k = 1; k <= 21; k++) {
+                            sb.append("-");
+                        }
+                        sb.append("\n");
+                    }
+                    for (int j = 1; j <= HS.GetNKolEff(); j++) {
+                        sb.append(String.valueOf(HS.GetElmt(i, j)));
+                        if (j == HS.GetNKolEff()) {
+                            sb.append("\n");
+                        } else if (j % 3 == 0) {
+                            sb.append(" | ");
+                        } else sb.append(" ");
+                    }
+                }
+                //Penutup
+                for (k = 1; k <= 21; k++) {
+                    sb.append("-");
+                }
+                sb.append("\n");
                 outputField.setText(sb.toString());
-                
+
             } catch (IOException ex) {
-              System.out.println("problem accessing file"+file.getAbsolutePath());
+                System.out.println("problem accessing file" + file.getAbsolutePath());
             }
         } else {
             System.out.println("File access cancelled by user.");
@@ -261,60 +251,51 @@ public class Hyperdoku extends javax.swing.JFrame {
 
     private void fileChooserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileChooserActionPerformed
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_fileChooserActionPerformed
 
     private void OpenButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OpenButtonActionPerformed
-        // TODO add your handling code here:
         int returnVal = fileChooser.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             File file = fileChooser.getSelectedFile();
             try {
-              // What to do with the file, e.g. display it in a TextArea
-              inputField1.read( new FileReader( file.getAbsolutePath() ), null );
-              HyperdokuSolver HS = new HyperdokuSolver(9,9);
-		//Membaca File
-              HS.ReadHyperdokuFromFile(file.getAbsolutePath());
-              double start=System.currentTimeMillis();
-		HS.Solver();
-		double end=System.currentTimeMillis();
-                jTextField2.setText(String.valueOf(end-start));
+                // What to do with the file, e.g. display it in a TextArea
+                inputField1.read(new FileReader(file.getAbsolutePath()), null);
+                HyperdokuSolver HS = new HyperdokuSolver(9, 9);
+                //Membaca File
+                HS.ReadHyperdokuFromFile(file.getAbsolutePath());
+                double start = System.currentTimeMillis();
+                HS.Solver();
+                double end = System.currentTimeMillis();
+                jTextField2.setText(String.valueOf(end - start));
                 jTextField1.setText(String.valueOf(HS.assign));
                 StringBuilder sb = new StringBuilder();
                 int k;
-		for(int i=1;i<=HS.GetNBrsEff();i++)
-		{
-			if ((i-1) % 3 == 0 ) {
-				for (k=1;k<=21;k++)
-				{
-					sb.append("-");
-				}
-				sb.append("\n");
-			}
-			for(int j=1;j<=HS.GetNKolEff();j++)
-			{
-				sb.append(String.valueOf(HS.GetElmt(i,j)));
-				if(j==HS.GetNKolEff())
-				{
-					sb.append("\n");
-				}
-				else if (j % 3 == 0)
-				{
-					sb.append(" | ");
-				} 
-				else sb.append(" ");
-			}
-		}
-		//Penutup
-		for (k=1;k<=21;k++)
-		{
-			sb.append("-");
-		}
-		sb.append("\n");
+                for (int i = 1; i <= HS.GetNBrsEff(); i++) {
+                    if ((i - 1) % 3 == 0) {
+                        for (k = 1; k <= 21; k++) {
+                            sb.append("-");
+                        }
+                        sb.append("\n");
+                    }
+                    for (int j = 1; j <= HS.GetNKolEff(); j++) {
+                        sb.append(String.valueOf(HS.GetElmt(i, j)));
+                        if (j == HS.GetNKolEff()) {
+                            sb.append("\n");
+                        } else if (j % 3 == 0) {
+                            sb.append(" | ");
+                        } else sb.append(" ");
+                    }
+                }
+                //Penutup
+                for (k = 1; k <= 21; k++) {
+                    sb.append("-");
+                }
+                sb.append("\n");
                 outputField.setText(sb.toString());
-                
+
             } catch (IOException ex) {
-              System.out.println("problem accessing file"+file.getAbsolutePath());
+                System.out.println("problem accessing file" + file.getAbsolutePath());
             }
         } else {
             System.out.println("File access cancelled by user.");
@@ -322,7 +303,6 @@ public class Hyperdoku extends javax.swing.JFrame {
     }//GEN-LAST:event_OpenButtonActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
@@ -332,7 +312,7 @@ public class Hyperdoku extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -379,18 +359,20 @@ public class Hyperdoku extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextArea outputField;
+
     // End of variables declaration//GEN-END:variables
-class MyCustomFilter extends javax.swing.filechooser.FileFilter {
+    class MyCustomFilter extends javax.swing.filechooser.FileFilter {
         @Override
         public boolean accept(File file) {
             // Allow only directories, or files with ".txt" extension
             return file.isDirectory() || file.getAbsolutePath().endsWith(".txt");
         }
+
         @Override
         public String getDescription() {
             // This description will be displayed in the dialog,
             // hard-coded = ugly, should be done via I18N
             return "Text documents (*.txt)";
         }
-    } 
+    }
 }
