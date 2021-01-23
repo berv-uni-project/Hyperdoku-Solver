@@ -23,6 +23,6 @@ In this repository have two version application,
 
 ![Result](doc/result-gui.png)
 
-# Creator
+## Creator
 
 Created by : Bervianto Leo Pratama
