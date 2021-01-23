@@ -2,10 +2,13 @@
 /* Nama file : HyperdokuSolverDriver.java */
 /* Hyperdoku Solver Driver */
 
+package hyperdoku.solver.app;
+
+import hyperdoku.solver.utilities.HyperdokuSolver;
 import java.util.*;
 import java.io.*;
 
-public class HyperdokuSolverDriver {
+public class App {
 	
 	public static void main (String []args) throws FileNotFoundException {
 		System.out.println("Selamat datang dalam Hyperdoku Solver!");

@@ -4,6 +4,8 @@
 /* Menggunakan matriks integer sebagai penyimpan angka dan 
  * matriks boolean sebagai kunci angka input selain nol */
 
+package hyperdoku.solver.utilities;
+
 import java.util.*;
 import java.io.*;
 
@@ -16,7 +18,21 @@ public class HyperdokuSolver {
 	public boolean[][] MemF = new boolean[NMAX+1][NMAX+1];
 
 	// Konstruktor
-	HyperdokuSolver(int N, int M)
+	public HyperdokuSolver()
+	{
+		this.NBrsEff = this.NMAX;
+		this.NKolEff = this.NMAX;
+		for(int i=1;i<=this.NBrsEff;i++)
+		{
+			for(int j=1;j<=this.NKolEff;j++)
+			{
+				this.Mem[i][j] = 0;
+				this.MemF[i][j] = false;
+			}
+		}
+	}
+
+	public HyperdokuSolver(int N, int M)
 	{
 		this.NBrsEff = N;
 		this.NKolEff = M;
