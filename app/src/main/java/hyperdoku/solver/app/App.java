@@ -33,19 +33,19 @@ public class App {
             //Memulai inisialisasi hyperdoku
             HyperdokuSolver solver = new HyperdokuSolver(9, 9);
             //Membaca File
-            solver.ReadHyperdokuFromFile(FileName);
+            solver.readHyperdokuFromFile(FileName);
             System.out.println("Open File...");
             //Mencetak hasil baca
             System.out.println("Input Hyperdoku : ");
-            solver.PrintHyperdoku();
+            solver.printHyperdoku();
             //Memulai memecahkan
             double start = System.currentTimeMillis();
-            solver.Solver();
+            solver.solver();
             double end = System.currentTimeMillis();
             //Akhir pemecahan
             //Cetak setiap hasil
             System.out.println("Hasilnya adalah : ");
-            solver.PrintHyperdoku();
+            solver.printHyperdoku();
             System.out.println("Jumlah assignment : " + solver.assign + " kali");
             System.out.println("Waktu memecahkan sekitar : " + (end - start) + " ms");
         } catch (FileNotFoundException ex) {

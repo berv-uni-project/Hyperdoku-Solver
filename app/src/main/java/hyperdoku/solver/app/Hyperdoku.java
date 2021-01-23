@@ -210,24 +210,24 @@ public class Hyperdoku extends javax.swing.JFrame {
                 inputField1.read(new FileReader(file.getAbsolutePath()), null);
                 HyperdokuSolver HS = new HyperdokuSolver(9, 9);
                 //Membaca File
-                HS.ReadHyperdokuFromFile(file.getAbsolutePath());
+                HS.readHyperdokuFromFile(file.getAbsolutePath());
                 double start = System.currentTimeMillis();
-                HS.Solver();
+                HS.solver();
                 double end = System.currentTimeMillis();
                 jTextField2.setText(String.valueOf(end - start));
                 jTextField1.setText(String.valueOf(HS.assign));
                 StringBuilder sb = new StringBuilder();
                 int k;
-                for (int i = 1; i <= HS.GetNBrsEff(); i++) {
+                for (int i = 1; i <= HS.getNBrsEff(); i++) {
                     if ((i - 1) % 3 == 0) {
                         for (k = 1; k <= 21; k++) {
                             sb.append("-");
                         }
                         sb.append("\n");
                     }
-                    for (int j = 1; j <= HS.GetNKolEff(); j++) {
-                        sb.append(String.valueOf(HS.GetElmt(i, j)));
-                        if (j == HS.GetNKolEff()) {
+                    for (int j = 1; j <= HS.getNKolEff(); j++) {
+                        sb.append(String.valueOf(HS.getElmt(i, j)));
+                        if (j == HS.getNKolEff()) {
                             sb.append("\n");
                         } else if (j % 3 == 0) {
                             sb.append(" | ");
@@ -263,24 +263,24 @@ public class Hyperdoku extends javax.swing.JFrame {
                 inputField1.read(new FileReader(file.getAbsolutePath()), null);
                 HyperdokuSolver solver = new HyperdokuSolver(9, 9);
                 //Membaca File
-                solver.ReadHyperdokuFromFile(file.getAbsolutePath());
+                solver.readHyperdokuFromFile(file.getAbsolutePath());
                 double start = System.currentTimeMillis();
-                solver.Solver();
+                solver.solver();
                 double end = System.currentTimeMillis();
                 jTextField2.setText(String.valueOf(end - start));
                 jTextField1.setText(String.valueOf(solver.assign));
                 StringBuilder sb = new StringBuilder();
                 int k;
-                for (int i = 1; i <= solver.GetNBrsEff(); i++) {
+                for (int i = 1; i <= solver.getNBrsEff(); i++) {
                     if ((i - 1) % 3 == 0) {
                         for (k = 1; k <= 21; k++) {
                             sb.append("-");
                         }
                         sb.append("\n");
                     }
-                    for (int j = 1; j <= solver.GetNKolEff(); j++) {
-                        sb.append(String.valueOf(solver.GetElmt(i, j)));
-                        if (j == solver.GetNKolEff()) {
+                    for (int j = 1; j <= solver.getNKolEff(); j++) {
+                        sb.append(String.valueOf(solver.getElmt(i, j)));
+                        if (j == solver.getNKolEff()) {
                             sb.append("\n");
                         } else if (j % 3 == 0) {
                             sb.append(" | ");
