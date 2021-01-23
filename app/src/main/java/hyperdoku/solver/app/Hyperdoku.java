@@ -341,23 +341,77 @@ public class Hyperdoku extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /**
+     * Exit Menu Item
+     */
     private javax.swing.JMenuItem Exit;
+    /**
+     * File Menu Item
+     */
     private javax.swing.JMenu File;
+    /**
+     * Open Menu Item
+     */
     private javax.swing.JMenuItem Open;
+    /**
+     * Open Button
+     */
     private javax.swing.JButton OpenButton;
+    /**
+     * File chooser
+     */
     private javax.swing.JFileChooser fileChooser;
+    /**
+     * Input Field
+     */
     private javax.swing.JTextField inputField1;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel1;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel2;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel3;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel4;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel5;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel6;
+    /**
+     * Label
+     */
     private javax.swing.JLabel jLabel7;
+    /**
+     * Menu Bar
+     */
     private javax.swing.JMenuBar jMenuBar1;
+    /**
+     * Scroll Panel
+     */
     private javax.swing.JScrollPane jScrollPane1;
+    /**
+     * Text Field
+     */
     private javax.swing.JTextField jTextField1;
+    /**
+     * Text Field
+     */
     private javax.swing.JTextField jTextField2;
+    /**
+     * Output Field
+     */
     private javax.swing.JTextArea outputField;
 
     // End of variables declaration//GEN-END:variables
