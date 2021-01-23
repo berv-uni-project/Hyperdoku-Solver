@@ -8,11 +8,8 @@ Hyperdoku solver is application to solve hyperdoku. This application is to imple
 
 In this repository have two version application,
 
-1. CLI (Command Line Interface) - is [here](CLI/).
-2. GUI (Graphical User Interface) - is [here](GUI/).
-
-* GUI version build with Netbeans.
-* Test case is [here](test/).
+1. CLI (Command Line Interface) - `./gradlew run`.
+2. GUI (Graphical User Interface) - `./gradlew gui`.
 
 ## Interface
 

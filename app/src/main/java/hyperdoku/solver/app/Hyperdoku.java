@@ -1,4 +1,6 @@
+package hyperdoku.solver.app;
 
+import hyperdoku.solver.utilities.HyperdokuSolver;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;

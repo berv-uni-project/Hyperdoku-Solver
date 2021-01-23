@@ -16,6 +16,11 @@ application {
     mainClass = 'hyperdoku.solver.app.App'
 }
 
+task(gui, dependsOn: 'classes', type: JavaExec) {
+   main = 'hyperdoku.solver.app.Hyperdoku'
+   classpath = sourceSets.main.runtimeClasspath
+}
+
 run {
  standardInput = System.in
 }
